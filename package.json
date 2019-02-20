@@ -1,30 +1,24 @@
 {
-  "author": {
-    "name": "Shadow Roland",
-    "email": "shadowroland@live.com"
-  },
-  "bugs": {
-    "url": "https://github.com/ShadowRoland/react-native-sr-kit/issues"
-  },
-  "bundleDependencies": false,
-  "dependencies": {},
-  "deprecated": false,
+  "name": "react-native-sr-kit",
+  "version": "0.0.1-alpha6",
   "description": "kit of react-native app made by Shadow Roland",
-  "homepage": "https://github.com/ShadowRoland/react-native-sr-kit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShadowRoland/react-native-sr-kit.git"
+  },
   "keywords": [
     "react-component",
     "react-native",
     "ios"
   ],
+  "author": "Shadow Roland",
   "license": "MIT",
-  "main": "index.js",
-  "name": "react-native-sr-kit",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:ShadowRoland/react-native-sr-kit.git"
+  "bugs": {
+    "url": "https://github.com/ShadowRoland/react-native-sr-kit/issues"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "version": "0.0.1-alpha5"
+  "homepage": "https://github.com/ShadowRoland/react-native-sr-kit#readme"
 }
