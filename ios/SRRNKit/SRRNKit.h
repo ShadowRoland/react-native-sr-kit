@@ -24,5 +24,4 @@ typedef NS_ENUM(NSInteger, ProcessEnv) {
 @interface SRRNKit : NSObject<RCTBridgeModule>
 @property (nonatomic, assign) ProcessEnv env;
 @property (nonatomic, strong) SRRNLogger *logger;
-+ (instancetype)sharedInstance;
 @end

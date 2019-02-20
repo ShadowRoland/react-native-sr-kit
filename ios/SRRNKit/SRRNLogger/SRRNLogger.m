@@ -7,7 +7,6 @@
 //
 
 #import "SRRNLogger.h"
-#import "../SRRNKit.h"
 
 @interface SRRNLogger () {
     NSString *_directory;
@@ -73,7 +72,6 @@ RCT_EXPORT_VIEW_PROPERTY(filesDiskQuota, NSInteger)
 }
 
 - (void)reinitLogger {
-    ddLogLevel = [SRRNKit sharedInstance].env == ProcessEnvPro ? DDLogLevelInfo : DDLogLevelVerbose;
     [DDLog removeLogger:_logger];
     if (_directory.length > 0) {
         _logger =

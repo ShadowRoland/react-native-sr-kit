@@ -9,19 +9,21 @@
 #import <Foundation/Foundation.h>
 #import "CocoaLumberjack/Classes/CocoaLumberjack.h"
 
+#if __has_include(<React/RCTAssert.h>)
+#import <React/RCTBridgeModule.h>
+#else
+#import "RCTBridgeModule.h"
+#endif
+
 NS_ASSUME_NONNULL_BEGIN
 
 static DDLogLevel ddLogLevel = DDLogLevelInfo;
 
-@interface SRRNLogger : NSObject
+@interface SRRNLogger : NSObject<RCTBridgeModule>
 @property (nonatomic, strong) NSString *directory;
 @property (nonatomic, assign) NSTimeInterval rollingFrequency;
 @property (nonatomic, assign) NSInteger maxNumber;
 @property (nonatomic, assign) long long filesDiskQuota;
-//- (void)debug:(NSString *)message;
-//- (void)info:(NSString *)message;
-//- (void)warn:(NSString *)message;
-//- (void)error:(NSString *)message;
 @end
 
 NS_ASSUME_NONNULL_END
