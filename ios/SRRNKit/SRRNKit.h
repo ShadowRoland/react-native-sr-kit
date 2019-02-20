@@ -14,6 +14,8 @@
 #else
 #import "RCTBridgeModule.h"
 #endif
+#import <React/RCTViewManager.h>
+#import <React/RCTView.h>
 
 typedef NS_ENUM(NSInteger, ProcessEnv) {
     ProcessEnvDev = 0,

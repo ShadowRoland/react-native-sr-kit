@@ -17,7 +17,7 @@ RCT_EXPORT_VIEW_PROPERTY(env, NSInteger)
 
 - (void)setEnv:(ProcessEnv)env {
     _env = env;
-    ddLogLevel = [SRRNKit sharedInstance].env == ProcessEnvPro ? DDLogLevelInfo : DDLogLevelVerbose;
+    ddLogLevel = _env == ProcessEnvPro ? DDLogLevelInfo : DDLogLevelVerbose;
 }
 
 - (SRRNLogger *)logger {
