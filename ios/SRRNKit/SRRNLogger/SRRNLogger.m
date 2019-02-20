@@ -17,7 +17,7 @@
 
 @implementation SRRNLogger
 
-RCT_EXPORT_MODULE(SRRNKit)
+RCT_EXPORT_MODULE()
 RCT_EXPORT_VIEW_PROPERTY(directory, NSString)
 RCT_EXPORT_VIEW_PROPERTY(rollingFrequency, NSInteger)
 RCT_EXPORT_VIEW_PROPERTY(maxNumber, NSInteger)

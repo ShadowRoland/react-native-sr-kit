@@ -10,7 +10,7 @@
 
 @implementation SRRNKit
 
-RCT_EXPORT_MODULE(SRRNKit)
+RCT_EXPORT_MODULE()
 RCT_EXPORT_VIEW_PROPERTY(env, NSInteger)
 
 #pragma mark - Singleton
