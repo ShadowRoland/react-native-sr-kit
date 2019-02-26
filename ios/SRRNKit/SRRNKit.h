@@ -14,8 +14,9 @@
 #else
 #import "RCTBridgeModule.h"
 #endif
-#import <React/RCTViewManager.h>
-#import <React/RCTView.h>
+#import <React/RCTConvert.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSInteger, ProcessEnv) {
     ProcessEnvDev = 0,
@@ -24,6 +25,9 @@ typedef NS_ENUM(NSInteger, ProcessEnv) {
 };
 
 @interface SRRNKit : NSObject<RCTBridgeModule>
++ (instancetype)sharedInstance;
 @property (nonatomic, assign) ProcessEnv env;
 @property (nonatomic, strong) SRRNLogger *logger;
 @end
+
+NS_ASSUME_NONNULL_END

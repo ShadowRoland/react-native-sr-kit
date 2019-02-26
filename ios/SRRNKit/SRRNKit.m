@@ -8,14 +8,52 @@
 
 #import "SRRNKit.h"
 
+@interface SRRNKit () {
+    ProcessEnv _env;
+}
+
+@end
+
 @implementation SRRNKit
 
 RCT_EXPORT_MODULE()
-RCT_EXPORT_VIEW_PROPERTY(env, NSInteger)
 
 #pragma mark - Singleton
 
-- (void)setEnv:(ProcessEnv)env {
+static SRRNKit *sharedInstance;
+
++ (instancetype)sharedInstance {
+    if(!sharedInstance) {
+        sharedInstance = [[super allocWithZone:nil] init];  //super 调用allocWithZone
+    }
+    return sharedInstance;
+}
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        _env = ProcessEnvDev;
+    }
+    return self;
+}
+
++ (id)allocWithZone:(NSZone *)zone {
+    return [SRRNKit sharedInstance];
+}
+
+- (id)copy {
+    return self;
+}
+
+- (id)copyWithZone:(NSZone *)zone {
+    return self;
+}
+
+- (ProcessEnv)env {
+    return _env;
+}
+
+RCT_EXPORT_METHOD(setEnv:(ProcessEnv)env) {
     _env = env;
     ddLogLevel = _env == ProcessEnvPro ? DDLogLevelInfo : DDLogLevelVerbose;
 }
@@ -26,4 +64,13 @@ RCT_EXPORT_VIEW_PROPERTY(env, NSInteger)
     return _logger;
 }
 
+@end
+
+@implementation RCTConvert (ProcessEnv)
+RCT_ENUM_CONVERTER(ProcessEnv,
+                   (@{ @"development" : @(ProcessEnvDev),
+                       @"test" : @(ProcessEnvTest),
+                       @"production" : @(ProcessEnvPro)}),
+                   ProcessEnvDev,
+                   integerValue)
 @end
