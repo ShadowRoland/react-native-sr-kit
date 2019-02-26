@@ -1,6 +1,6 @@
 {
   "name": "react-native-sr-kit",
-  "version": "0.0.1-alpha7",
+  "version": "0.0.1-alpha8",
   "description": "kit of react-native app made by Shadow Roland",
   "main": "index.js",
   "scripts": {
