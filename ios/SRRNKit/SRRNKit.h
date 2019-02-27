@@ -17,7 +17,7 @@
 #import "RCTBridgeModule.h"
 #endif
 #import <React/RCTConvert.h>
-#import <React/RCTView.h>
+#import <React/RCTDevMenu.h>
 
 #define LogDebug        DDLogDebug
 #define LogInfo         DDLogInfo
