@@ -25,6 +25,10 @@ static SRRNKit *sharedInstance;
 + (instancetype)sharedInstance {
     if(!sharedInstance) {
         sharedInstance = [[super allocWithZone:nil] init];  //super 调用allocWithZone
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(rnKitMenuItemClicked)
+                                                     name:@"RNKitMenuItemClicked"
+                                                   object:nil];
     }
     return sharedInstance;
 }
@@ -62,6 +66,17 @@ RCT_EXPORT_METHOD(setEnv:(ProcessEnv)env) {
     if (!_logger)
         _logger = [[SRRNLogger alloc] init];
     return _logger;
+}
+
+- (SRRNWebServer *)webServer {
+    return [SRRNWebServer sharedInstance];
+}
+
++ (BOOL)isEmptyString:(id)string {
+    if (!string || ![string isKindOfClass:NSString.class]) {
+        return YES;
+    }
+    return [(NSString *)string trim].length == 0;
 }
 
 @end

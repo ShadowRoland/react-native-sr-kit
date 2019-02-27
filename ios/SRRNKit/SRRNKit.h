@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Extensions/Extensions.h"
 #import "SRRNLogger/SRRNLogger.h"
+#import "SRRNWebServer/SRRNWebServer.h"
 
 #if __has_include(<React/RCTAssert.h>)
 #import <React/RCTBridgeModule.h>
@@ -15,6 +17,13 @@
 #import "RCTBridgeModule.h"
 #endif
 #import <React/RCTConvert.h>
+
+#define LogDebug        DDLogDebug
+#define LogInfo         DDLogInfo
+#define LogWarn         DDLogWarn
+#define LogError        DDLogError
+#define LogFunc         LogInfo(@"%s", __func__)
+#define LogDebugFunc    LogDebug(@"%s", __func__)
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -25,9 +34,11 @@ typedef NS_ENUM(NSInteger, ProcessEnv) {
 };
 
 @interface SRRNKit : NSObject<RCTBridgeModule>
-+ (instancetype)sharedInstance;
 @property (nonatomic, assign) ProcessEnv env;
 @property (nonatomic, strong) SRRNLogger *logger;
+@property (nonatomic, strong) SRRNWebServer *webServer;
++ (instancetype)sharedInstance;
++ (BOOL)isEmptyString:(id)string;
 @end
 
 NS_ASSUME_NONNULL_END
