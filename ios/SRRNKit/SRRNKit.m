@@ -72,6 +72,23 @@ RCT_EXPORT_METHOD(setEnv:(ProcessEnv)env) {
     return [SRRNWebServer sharedInstance];
 }
 
+- (void)addDevMenuItem:(RCTDevMenu *)menu title:(NSString *)title {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if (!menu) {
+            return;
+        }
+        
+        [menu addItem:[RCTDevMenuItem buttonItemWithTitle:![SRRNKit isEmptyString:title] ? title :@"RNKit Debug"
+                                                  handler:^
+                       {
+                           [[NSNotificationCenter defaultCenter] postNotificationName:(NSString *)RNKitMenuItemClickedNotification
+                                                                               object:nil
+                                                                             userInfo:nil];
+                           
+                       }]];
+    });
+}
+
 + (BOOL)isEmptyString:(id)string {
     if (!string || ![string isKindOfClass:NSString.class]) {
         return YES;

@@ -23,7 +23,6 @@
 		4E3882D1222632D4004A552E /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3882C3222632D3004A552E /* GCDWebServerDataRequest.m */; };
 		4E3882D2222632D4004A552E /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3882C4222632D3004A552E /* GCDWebServerFileRequest.m */; };
 		4E3882D622263923004A552E /* NSString+SRRNKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3882D522263923004A552E /* NSString+SRRNKit.m */; };
-		4E3882F622266E11004A552E /* RCTDevMenu+SRRNKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3882F522266E11004A552E /* RCTDevMenu+SRRNKit.m */; };
 		4E8FC1AA221BE3C0002A123B /* SRRNKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8FC1A9221BE3C0002A123B /* SRRNKit.m */; };
 		4E8FC1AB221BE3C0002A123B /* SRRNKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4E8FC1A8221BE3C0002A123B /* SRRNKit.h */; };
 		4E8FC1B4221BE416002A123B /* SRRNLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8FC1B3221BE416002A123B /* SRRNLogger.m */; };
@@ -86,8 +85,6 @@
 		4E3882D422263923004A552E /* NSString+SRRNKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+SRRNKit.h"; sourceTree = "<group>"; };
 		4E3882D522263923004A552E /* NSString+SRRNKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+SRRNKit.m"; sourceTree = "<group>"; };
 		4E3882D722265155004A552E /* Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Extensions.h; sourceTree = "<group>"; };
-		4E3882F422266E11004A552E /* RCTDevMenu+SRRNKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RCTDevMenu+SRRNKit.h"; sourceTree = "<group>"; };
-		4E3882F522266E11004A552E /* RCTDevMenu+SRRNKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RCTDevMenu+SRRNKit.m"; sourceTree = "<group>"; };
 		4E8FC1A5221BE3C0002A123B /* libSRRNKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSRRNKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E8FC1A8221BE3C0002A123B /* SRRNKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRRNKit.h; sourceTree = "<group>"; };
 		4E8FC1A9221BE3C0002A123B /* SRRNKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRRNKit.m; sourceTree = "<group>"; };
@@ -207,8 +204,6 @@
 				4E3882D722265155004A552E /* Extensions.h */,
 				4E3882D422263923004A552E /* NSString+SRRNKit.h */,
 				4E3882D522263923004A552E /* NSString+SRRNKit.m */,
-				4E3882F422266E11004A552E /* RCTDevMenu+SRRNKit.h */,
-				4E3882F522266E11004A552E /* RCTDevMenu+SRRNKit.m */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -380,7 +375,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E3882F622266E11004A552E /* RCTDevMenu+SRRNKit.m in Sources */,
 				4E3882A5222631DC004A552E /* SRRNWebServer.m in Sources */,
 				4E8FC1DC221BE41F002A123B /* DDASLLogCapture.m in Sources */,
 				4E3882D1222632D4004A552E /* GCDWebServerDataRequest.m in Sources */,

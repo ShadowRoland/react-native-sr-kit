@@ -10,6 +10,5 @@
 #define Extensions_h
 
 #import "NSString+SRRNKit.h"
-#import "RCTDevMenu+SRRNKit.h"
 
 #endif /* Extensions_h */
