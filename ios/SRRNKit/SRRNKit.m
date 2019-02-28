@@ -7,11 +7,13 @@
 //
 
 #import "SRRNKit.h"
+#import <React/RCTRootView.h>
+#import <React/RCTDevMenu.h>
 
 @interface SRRNKit () {
     ProcessEnv _env;
 }
-
+- (void)addDevMenuItem:(RCTDevMenu *)menu title:(NSString *)title;
 @end
 
 @implementation SRRNKit
@@ -25,20 +27,21 @@ static SRRNKit *sharedInstance;
 + (instancetype)sharedInstance {
     if(!sharedInstance) {
         sharedInstance = [[super allocWithZone:nil] init];  //super 调用allocWithZone
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(rnKitMenuItemClicked)
-                                                     name:@"RNKitMenuItemClicked"
-                                                   object:nil];
+        
+        sharedInstance.env = ProcessEnvDev;
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            id appDelegate = [UIApplication sharedApplication].delegate;
+            UIWindow *window = [appDelegate valueForKey:@"window"];
+            if ([window isKindOfClass:UIWindow.class]) {
+                RCTRootView *rootView = (RCTRootView *)window.rootViewController.view;
+                if ([rootView isKindOfClass:RCTRootView.class]) {
+                    [sharedInstance addDevMenuItem:rootView.bridge.devMenu title:@"应用配置"];
+                }
+            }
+        });
     }
     return sharedInstance;
-}
-
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        _env = ProcessEnvDev;
-    }
-    return self;
 }
 
 + (id)allocWithZone:(NSZone *)zone {
@@ -73,20 +76,16 @@ RCT_EXPORT_METHOD(setEnv:(ProcessEnv)env) {
 }
 
 - (void)addDevMenuItem:(RCTDevMenu *)menu title:(NSString *)title {
-    dispatch_async(dispatch_get_main_queue(), ^{
-        if (!menu) {
-            return;
-        }
+    if (!menu) {
+        return;
+    }
+    
+    [menu addItem:[RCTDevMenuItem buttonItemWithTitle:![SRRNKit isEmptyString:title] ? title :@"RNKit Debug" handler:^ {
+        [[NSNotificationCenter defaultCenter] postNotificationName:(NSString *)RNKitMenuItemClickedNotification
+                                                            object:nil
+                                                          userInfo:nil];
         
-        [menu addItem:[RCTDevMenuItem buttonItemWithTitle:![SRRNKit isEmptyString:title] ? title :@"RNKit Debug"
-                                                  handler:^
-                       {
-                           [[NSNotificationCenter defaultCenter] postNotificationName:(NSString *)RNKitMenuItemClickedNotification
-                                                                               object:nil
-                                                                             userInfo:nil];
-                           
-                       }]];
-    });
+    }]];
 }
 
 + (BOOL)isEmptyString:(id)string {

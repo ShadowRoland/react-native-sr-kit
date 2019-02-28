@@ -23,6 +23,7 @@
 		4E3882D1222632D4004A552E /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3882C3222632D3004A552E /* GCDWebServerDataRequest.m */; };
 		4E3882D2222632D4004A552E /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3882C4222632D3004A552E /* GCDWebServerFileRequest.m */; };
 		4E3882D622263923004A552E /* NSString+SRRNKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3882D522263923004A552E /* NSString+SRRNKit.m */; };
+		4E3883072227804A004A552E /* NSObject+SRRNKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3883062227804A004A552E /* NSObject+SRRNKit.m */; };
 		4E8FC1AA221BE3C0002A123B /* SRRNKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8FC1A9221BE3C0002A123B /* SRRNKit.m */; };
 		4E8FC1AB221BE3C0002A123B /* SRRNKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4E8FC1A8221BE3C0002A123B /* SRRNKit.h */; };
 		4E8FC1B4221BE416002A123B /* SRRNLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8FC1B3221BE416002A123B /* SRRNLogger.m */; };
@@ -85,6 +86,8 @@
 		4E3882D422263923004A552E /* NSString+SRRNKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+SRRNKit.h"; sourceTree = "<group>"; };
 		4E3882D522263923004A552E /* NSString+SRRNKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+SRRNKit.m"; sourceTree = "<group>"; };
 		4E3882D722265155004A552E /* Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Extensions.h; sourceTree = "<group>"; };
+		4E3883052227804A004A552E /* NSObject+SRRNKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+SRRNKit.h"; sourceTree = "<group>"; };
+		4E3883062227804A004A552E /* NSObject+SRRNKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SRRNKit.m"; sourceTree = "<group>"; };
 		4E8FC1A5221BE3C0002A123B /* libSRRNKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSRRNKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E8FC1A8221BE3C0002A123B /* SRRNKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRRNKit.h; sourceTree = "<group>"; };
 		4E8FC1A9221BE3C0002A123B /* SRRNKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRRNKit.m; sourceTree = "<group>"; };
@@ -202,6 +205,8 @@
 			isa = PBXGroup;
 			children = (
 				4E3882D722265155004A552E /* Extensions.h */,
+				4E3883052227804A004A552E /* NSObject+SRRNKit.h */,
+				4E3883062227804A004A552E /* NSObject+SRRNKit.m */,
 				4E3882D422263923004A552E /* NSString+SRRNKit.h */,
 				4E3882D522263923004A552E /* NSString+SRRNKit.m */,
 			);
@@ -380,6 +385,7 @@
 				4E3882D1222632D4004A552E /* GCDWebServerDataRequest.m in Sources */,
 				4E8FC1D6221BE41F002A123B /* DDContextFilterLogFormatter.m in Sources */,
 				4E3882D0222632D4004A552E /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				4E3883072227804A004A552E /* NSObject+SRRNKit.m in Sources */,
 				4E3882D622263923004A552E /* NSString+SRRNKit.m in Sources */,
 				4E8FC1D5221BE41F002A123B /* DDASLLogger.m in Sources */,
 				4E3882D2222632D4004A552E /* GCDWebServerFileRequest.m in Sources */,
