@@ -1,3 +1,5 @@
 /Pods/
 /SRRNKit.xcworkspace/
+/SRRNKit.xcodeproj/xcshareddata/
+/SRRNKit.xcodeproj/xcuserdata/
 /Podfile.lock

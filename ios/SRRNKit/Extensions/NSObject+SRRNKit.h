@@ -6,13 +6,12 @@
 //  Copyright © 2019 Sharow Roland. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NSObject (SRRNKit)
-- (BOOL)hasProperty:(NSString *)name;
-- (BOOL)hasMethod:(NSString *)name;
+- (BOOL)srrnHasProperty:(NSString *)name;
+- (BOOL)srrnHasMethod:(NSString *)name;
+- (id)srrnObjectWithKindOfClass:(Class)aClass;
 @end
 
 NS_ASSUME_NONNULL_END

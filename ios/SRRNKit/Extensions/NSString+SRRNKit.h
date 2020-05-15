@@ -6,13 +6,12 @@
 //  Copyright © 2019 Sharow Roland. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (SRRNKit)
-- (NSString *)condense;
-- (NSString *)trim;
+- (NSString *)srrnCondense;
+- (NSString *)srrnTrim;
+@property (nonatomic, strong, readonly) UIColor *srrnColor;
 @end
 
 NS_ASSUME_NONNULL_END

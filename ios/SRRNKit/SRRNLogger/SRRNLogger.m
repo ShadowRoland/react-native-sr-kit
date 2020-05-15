@@ -66,7 +66,14 @@ RCT_EXPORT_VIEW_PROPERTY(filesDiskQuota, NSInteger)
 - (void)initLogger {
     if (!_logger) {
         [DDTTYLogger sharedInstance].colorsEnabled = YES;
-        [DDLog addLogger:[DDASLLogger sharedInstance]];
+        if (@available(iOS 10.0, *)) {
+            [DDLog addLogger:[DDOSLogger sharedInstance]];
+        } else {
+            #pragma GCC diagnostic push
+            #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+            [DDLog addLogger:[DDASLLogger sharedInstance]];
+            #pragma GCC diagnostic pop
+        }
         [self reinitLogger];
     }
 }
@@ -78,7 +85,7 @@ RCT_EXPORT_VIEW_PROPERTY(filesDiskQuota, NSInteger)
         [[DDFileLogger alloc] initWithLogFileManager:[[DDLogFileManagerDefault alloc]
                                                       initWithLogsDirectory:self.directory]];
     } else {
-        _logger = [[DDFileLogger alloc] init];
+        _logger = [DDFileLogger new];
     }
     _logger.rollingFrequency = _rollingFrequency > 0 ? _rollingFrequency : 60 * 60 * 24; //24 hour rolling
     _logger.logFileManager.maximumNumberOfLogFiles = _maxNumber > 0 ? _maxNumber : 10;

@@ -67,7 +67,7 @@ RCT_EXPORT_METHOD(setEnv:(ProcessEnv)env) {
 
 - (SRRNLogger *)logger {
     if (!_logger)
-        _logger = [[SRRNLogger alloc] init];
+        _logger = [SRRNLogger new];
     return _logger;
 }
 
@@ -75,24 +75,23 @@ RCT_EXPORT_METHOD(setEnv:(ProcessEnv)env) {
     return [SRRNWebServer sharedInstance];
 }
 
+- (SRRNUtilities *)utilities {
+    if (!_utilities)
+        _utilities = [SRRNUtilities new];
+    return _utilities;
+}
+
 - (void)addDevMenuItem:(RCTDevMenu *)menu title:(NSString *)title {
     if (!menu) {
         return;
     }
     
-    [menu addItem:[RCTDevMenuItem buttonItemWithTitle:![SRRNKit isEmptyString:title] ? title :@"RNKit Debug" handler:^ {
+    [menu addItem:[RCTDevMenuItem buttonItemWithTitle:![Utilities isEmptyString:title] ? title :@"RNKit Debug" handler:^ {
         [[NSNotificationCenter defaultCenter] postNotificationName:(NSString *)RNKitMenuItemClickedNotification
                                                             object:nil
                                                           userInfo:nil];
         
     }]];
-}
-
-+ (BOOL)isEmptyString:(id)string {
-    if (!string || ![string isKindOfClass:NSString.class]) {
-        return YES;
-    }
-    return [(NSString *)string trim].length == 0;
 }
 
 @end

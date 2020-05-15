@@ -6,15 +6,7 @@
 //  Copyright © 2019 Sharow Roland. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-#if __has_include(<React/RCTAssert.h>)
-#import <React/RCTBridgeModule.h>
-#else
-#import "RCTBridgeModule.h"
-#endif
-#import <React/RCTViewManager.h>
-#import <React/RCTView.h>
+typedef NSDictionary * _Nonnull (^SRRNWebServerHTTPProcess)(NSDictionary * _Nullable request);
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -27,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)sharedInstance;
 - (void)start;
 - (void)stop;
+- (void)addHTTPHandler:(NSString *)method path:(NSString *)path process:(SRRNWebServerHTTPProcess)process;
+- (void)removeHTTPHandler:(NSString *)method path:(NSString *)path;
 @end
 
 @protocol SRRNWebServerDelegate <NSObject>

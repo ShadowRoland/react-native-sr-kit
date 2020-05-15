@@ -9,33 +9,36 @@
 /* Begin PBXBuildFile section */
 		4E1593B3221BEEF000921B86 /* SRRNLogger.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4E8FC1B2221BE416002A123B /* SRRNLogger.h */; };
 		4E3882A5222631DC004A552E /* SRRNWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3882A4222631DC004A552E /* SRRNWebServer.m */; };
-		4E3882C6222632D4004A552E /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3882AA222632D3004A552E /* GCDWebServerResponse.m */; };
-		4E3882C7222632D4004A552E /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3882AD222632D3004A552E /* GCDWebServerRequest.m */; };
-		4E3882C8222632D4004A552E /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3882B0222632D3004A552E /* GCDWebServerFunctions.m */; };
-		4E3882C9222632D4004A552E /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3882B1222632D3004A552E /* GCDWebServer.m */; };
-		4E3882CA222632D4004A552E /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3882B2222632D3004A552E /* GCDWebServerConnection.m */; };
-		4E3882CB222632D4004A552E /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3882B7222632D3004A552E /* GCDWebServerErrorResponse.m */; };
-		4E3882CC222632D4004A552E /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3882B9222632D3004A552E /* GCDWebServerFileResponse.m */; };
-		4E3882CD222632D4004A552E /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3882BA222632D3004A552E /* GCDWebServerDataResponse.m */; };
-		4E3882CE222632D4004A552E /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3882BC222632D3004A552E /* GCDWebServerStreamedResponse.m */; };
-		4E3882CF222632D4004A552E /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3882C1222632D3004A552E /* GCDWebServerURLEncodedFormRequest.m */; };
-		4E3882D0222632D4004A552E /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3882C2222632D3004A552E /* GCDWebServerMultiPartFormRequest.m */; };
-		4E3882D1222632D4004A552E /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3882C3222632D3004A552E /* GCDWebServerDataRequest.m */; };
-		4E3882D2222632D4004A552E /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3882C4222632D3004A552E /* GCDWebServerFileRequest.m */; };
 		4E3882D622263923004A552E /* NSString+SRRNKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3882D522263923004A552E /* NSString+SRRNKit.m */; };
 		4E3883072227804A004A552E /* NSObject+SRRNKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3883062227804A004A552E /* NSObject+SRRNKit.m */; };
 		4E8FC1AA221BE3C0002A123B /* SRRNKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8FC1A9221BE3C0002A123B /* SRRNKit.m */; };
 		4E8FC1AB221BE3C0002A123B /* SRRNKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4E8FC1A8221BE3C0002A123B /* SRRNKit.h */; };
 		4E8FC1B4221BE416002A123B /* SRRNLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8FC1B3221BE416002A123B /* SRRNLogger.m */; };
-		4E8FC1D4221BE41F002A123B /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8FC1BA221BE41F002A123B /* DDTTYLogger.m */; };
-		4E8FC1D5221BE41F002A123B /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8FC1C0221BE41F002A123B /* DDASLLogger.m */; };
-		4E8FC1D6221BE41F002A123B /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8FC1C3221BE41F002A123B /* DDContextFilterLogFormatter.m */; };
-		4E8FC1D7221BE41F002A123B /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8FC1C4221BE41F002A123B /* DDDispatchQueueLogFormatter.m */; };
-		4E8FC1D8221BE41F002A123B /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8FC1C7221BE41F002A123B /* DDMultiFormatter.m */; };
-		4E8FC1D9221BE41F002A123B /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8FC1C9221BE41F002A123B /* DDLog.m */; };
-		4E8FC1DA221BE41F002A123B /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8FC1CE221BE41F002A123B /* DDAbstractDatabaseLogger.m */; };
-		4E8FC1DB221BE41F002A123B /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8FC1CF221BE41F002A123B /* DDFileLogger.m */; };
-		4E8FC1DC221BE41F002A123B /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8FC1D1221BE41F002A123B /* DDASLLogCapture.m */; };
+		4E9DC0202456C6F200ECA820 /* UIViewController+SRRNKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E9DC01F2456C6F200ECA820 /* UIViewController+SRRNKit.m */; };
+		4E9DC0232456E2C400ECA820 /* UINavigationController+SRRNKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E9DC0222456E2C400ECA820 /* UINavigationController+SRRNKit.m */; };
+		4E9DC027245AB1B700ECA820 /* SRRNProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E9DC026245AB1B700ECA820 /* SRRNProgressHUD.m */; };
+		4E9DC02E245AB38200ECA820 /* UIView+SRRNKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E9DC02D245AB38200ECA820 /* UIView+SRRNKit.m */; };
+		4E9DC030245AC72900ECA820 /* SRRNGif.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E9DC02F245AC72900ECA820 /* SRRNGif.m */; };
+		4E9DC043246AA68E00ECA820 /* SRRNKitExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4E3882D722265155004A552E /* SRRNKitExtensions.h */; };
+		4E9DC044246AA68E00ECA820 /* NSObject+SRRNKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4E3883052227804A004A552E /* NSObject+SRRNKit.h */; };
+		4E9DC045246AA68E00ECA820 /* NSString+SRRNKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4E3882D422263923004A552E /* NSString+SRRNKit.h */; };
+		4E9DC046246AA68E00ECA820 /* UIViewController+SRRNKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4E9DC01E2456C6F200ECA820 /* UIViewController+SRRNKit.h */; };
+		4E9DC047246AA68E00ECA820 /* UINavigationController+SRRNKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4E9DC0212456E2C400ECA820 /* UINavigationController+SRRNKit.h */; };
+		4E9DC048246AA68E00ECA820 /* UIView+SRRNKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4E9DC02C245AB38200ECA820 /* UIView+SRRNKit.h */; };
+		4E9DC049246AA68E00ECA820 /* SRRNGif.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4E9DC029245AB20700ECA820 /* SRRNGif.h */; };
+		4E9DC04A246AA68E00ECA820 /* SRRNNavigationBar.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4EC71F2E2456BFB80019CA4E /* SRRNNavigationBar.h */; };
+		4E9DC04B246AA68E00ECA820 /* SRRNNavigationItem.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4EC71F2C2456BFB80019CA4E /* SRRNNavigationItem.h */; };
+		4E9DC04C246AA68E00ECA820 /* SRRNNavigationController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4EC71F372456BFFD0019CA4E /* SRRNNavigationController.h */; };
+		4E9DC04D246AA68E00ECA820 /* SRRNProgressHUD.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4E9DC025245AB1B700ECA820 /* SRRNProgressHUD.h */; };
+		4E9DC04E246AA68E00ECA820 /* SRRNViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4EC71F332456BFB80019CA4E /* SRRNViewController.h */; };
+		4E9DC04F246AA68E00ECA820 /* SRRNWebServer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4E3882A3222631DC004A552E /* SRRNWebServer.h */; };
+		4E9DC050246AA68E00ECA820 /* SRRNUtilities.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4EC71F2324519B1A0019CA4E /* SRRNUtilities.h */; };
+		4EC71F2524519B1A0019CA4E /* SRRNUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC71F2424519B1A0019CA4E /* SRRNUtilities.m */; };
+		4EC71F342456BFB80019CA4E /* SRRNNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC71F2D2456BFB80019CA4E /* SRRNNavigationBar.m */; };
+		4EC71F352456BFB80019CA4E /* SRRNNavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC71F2F2456BFB80019CA4E /* SRRNNavigationItem.m */; };
+		4EC71F362456BFB80019CA4E /* SRRNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC71F322456BFB80019CA4E /* SRRNViewController.m */; };
+		4EC71F392456BFFD0019CA4E /* SRRNNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC71F382456BFFD0019CA4E /* SRRNNavigationController.m */; };
+		5F67B775334C45CC75CD3A3F /* libPods-SRRNKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E8EBC731B86B4D0EE84AEAD /* libPods-SRRNKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +48,20 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				4E9DC043246AA68E00ECA820 /* SRRNKitExtensions.h in CopyFiles */,
+				4E9DC044246AA68E00ECA820 /* NSObject+SRRNKit.h in CopyFiles */,
+				4E9DC045246AA68E00ECA820 /* NSString+SRRNKit.h in CopyFiles */,
+				4E9DC046246AA68E00ECA820 /* UIViewController+SRRNKit.h in CopyFiles */,
+				4E9DC047246AA68E00ECA820 /* UINavigationController+SRRNKit.h in CopyFiles */,
+				4E9DC048246AA68E00ECA820 /* UIView+SRRNKit.h in CopyFiles */,
+				4E9DC049246AA68E00ECA820 /* SRRNGif.h in CopyFiles */,
+				4E9DC04A246AA68E00ECA820 /* SRRNNavigationBar.h in CopyFiles */,
+				4E9DC04B246AA68E00ECA820 /* SRRNNavigationItem.h in CopyFiles */,
+				4E9DC04C246AA68E00ECA820 /* SRRNNavigationController.h in CopyFiles */,
+				4E9DC04D246AA68E00ECA820 /* SRRNProgressHUD.h in CopyFiles */,
+				4E9DC04E246AA68E00ECA820 /* SRRNViewController.h in CopyFiles */,
+				4E9DC04F246AA68E00ECA820 /* SRRNWebServer.h in CopyFiles */,
+				4E9DC050246AA68E00ECA820 /* SRRNUtilities.h in CopyFiles */,
 				4E1593B3221BEEF000921B86 /* SRRNLogger.h in CopyFiles */,
 				4E8FC1AB221BE3C0002A123B /* SRRNKit.h in CopyFiles */,
 			);
@@ -53,39 +70,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		438806B6A5C7B3DDCB34F789 /* Pods-SRRNKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SRRNKit.release.xcconfig"; path = "Target Support Files/Pods-SRRNKit/Pods-SRRNKit.release.xcconfig"; sourceTree = "<group>"; };
 		4E3882A3222631DC004A552E /* SRRNWebServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRRNWebServer.h; sourceTree = "<group>"; };
 		4E3882A4222631DC004A552E /* SRRNWebServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRRNWebServer.m; sourceTree = "<group>"; };
-		4E3882A8222632D3004A552E /* GCDWebServerFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFunctions.h; sourceTree = "<group>"; };
-		4E3882A9222632D3004A552E /* GCDWebServerPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerPrivate.h; sourceTree = "<group>"; };
-		4E3882AA222632D3004A552E /* GCDWebServerResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerResponse.m; sourceTree = "<group>"; };
-		4E3882AB222632D3004A552E /* GCDWebServerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerConnection.h; sourceTree = "<group>"; };
-		4E3882AC222632D3004A552E /* GCDWebServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServer.h; sourceTree = "<group>"; };
-		4E3882AD222632D3004A552E /* GCDWebServerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerRequest.m; sourceTree = "<group>"; };
-		4E3882AE222632D3004A552E /* GCDWebServerHTTPStatusCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerHTTPStatusCodes.h; sourceTree = "<group>"; };
-		4E3882AF222632D3004A552E /* GCDWebServerResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerResponse.h; sourceTree = "<group>"; };
-		4E3882B0222632D3004A552E /* GCDWebServerFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFunctions.m; sourceTree = "<group>"; };
-		4E3882B1222632D3004A552E /* GCDWebServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServer.m; sourceTree = "<group>"; };
-		4E3882B2222632D3004A552E /* GCDWebServerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerConnection.m; sourceTree = "<group>"; };
-		4E3882B3222632D3004A552E /* GCDWebServerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerRequest.h; sourceTree = "<group>"; };
-		4E3882B5222632D3004A552E /* GCDWebServerFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFileResponse.h; sourceTree = "<group>"; };
-		4E3882B6222632D3004A552E /* GCDWebServerStreamedResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerStreamedResponse.h; sourceTree = "<group>"; };
-		4E3882B7222632D3004A552E /* GCDWebServerErrorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerErrorResponse.m; sourceTree = "<group>"; };
-		4E3882B8222632D3004A552E /* GCDWebServerDataResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerDataResponse.h; sourceTree = "<group>"; };
-		4E3882B9222632D3004A552E /* GCDWebServerFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFileResponse.m; sourceTree = "<group>"; };
-		4E3882BA222632D3004A552E /* GCDWebServerDataResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerDataResponse.m; sourceTree = "<group>"; };
-		4E3882BB222632D3004A552E /* GCDWebServerErrorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerErrorResponse.h; sourceTree = "<group>"; };
-		4E3882BC222632D3004A552E /* GCDWebServerStreamedResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerStreamedResponse.m; sourceTree = "<group>"; };
-		4E3882BE222632D3004A552E /* GCDWebServerDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerDataRequest.h; sourceTree = "<group>"; };
-		4E3882BF222632D3004A552E /* GCDWebServerMultiPartFormRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerMultiPartFormRequest.h; sourceTree = "<group>"; };
-		4E3882C0222632D3004A552E /* GCDWebServerFileRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFileRequest.h; sourceTree = "<group>"; };
-		4E3882C1222632D3004A552E /* GCDWebServerURLEncodedFormRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerURLEncodedFormRequest.m; sourceTree = "<group>"; };
-		4E3882C2222632D3004A552E /* GCDWebServerMultiPartFormRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerMultiPartFormRequest.m; sourceTree = "<group>"; };
-		4E3882C3222632D3004A552E /* GCDWebServerDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerDataRequest.m; sourceTree = "<group>"; };
-		4E3882C4222632D3004A552E /* GCDWebServerFileRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFileRequest.m; sourceTree = "<group>"; };
-		4E3882C5222632D3004A552E /* GCDWebServerURLEncodedFormRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerURLEncodedFormRequest.h; sourceTree = "<group>"; };
 		4E3882D422263923004A552E /* NSString+SRRNKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+SRRNKit.h"; sourceTree = "<group>"; };
 		4E3882D522263923004A552E /* NSString+SRRNKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+SRRNKit.m"; sourceTree = "<group>"; };
-		4E3882D722265155004A552E /* Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Extensions.h; sourceTree = "<group>"; };
+		4E3882D722265155004A552E /* SRRNKitExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRRNKitExtensions.h; sourceTree = "<group>"; };
 		4E3883052227804A004A552E /* NSObject+SRRNKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+SRRNKit.h"; sourceTree = "<group>"; };
 		4E3883062227804A004A552E /* NSObject+SRRNKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SRRNKit.m"; sourceTree = "<group>"; };
 		4E8FC1A5221BE3C0002A123B /* libSRRNKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSRRNKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,32 +83,29 @@
 		4E8FC1A9221BE3C0002A123B /* SRRNKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRRNKit.m; sourceTree = "<group>"; };
 		4E8FC1B2221BE416002A123B /* SRRNLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRRNLogger.h; sourceTree = "<group>"; };
 		4E8FC1B3221BE416002A123B /* SRRNLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRRNLogger.m; sourceTree = "<group>"; };
-		4E8FC1B8221BE41F002A123B /* CocoaLumberjack.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = CocoaLumberjack.modulemap; sourceTree = "<group>"; };
-		4E8FC1BA221BE41F002A123B /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
-		4E8FC1BB221BE41F002A123B /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
-		4E8FC1BC221BE41F002A123B /* DDLegacyMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLegacyMacros.h; sourceTree = "<group>"; };
-		4E8FC1BD221BE41F002A123B /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
-		4E8FC1BE221BE41F002A123B /* DDLogMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLogMacros.h; sourceTree = "<group>"; };
-		4E8FC1BF221BE41F002A123B /* DDASLLogCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogCapture.h; sourceTree = "<group>"; };
-		4E8FC1C0221BE41F002A123B /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
-		4E8FC1C1221BE41F002A123B /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
-		4E8FC1C3221BE41F002A123B /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
-		4E8FC1C4221BE41F002A123B /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
-		4E8FC1C5221BE41F002A123B /* DDMultiFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMultiFormatter.h; sourceTree = "<group>"; };
-		4E8FC1C6221BE41F002A123B /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
-		4E8FC1C7221BE41F002A123B /* DDMultiFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMultiFormatter.m; sourceTree = "<group>"; };
-		4E8FC1C8221BE41F002A123B /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
-		4E8FC1C9221BE41F002A123B /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
-		4E8FC1CA221BE41F002A123B /* CocoaLumberjack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaLumberjack.h; sourceTree = "<group>"; };
-		4E8FC1CB221BE41F002A123B /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
-		4E8FC1CC221BE41F002A123B /* DDAssertMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAssertMacros.h; sourceTree = "<group>"; };
-		4E8FC1CD221BE41F002A123B /* DDLog+LOGV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDLog+LOGV.h"; sourceTree = "<group>"; };
-		4E8FC1CE221BE41F002A123B /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
-		4E8FC1CF221BE41F002A123B /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
-		4E8FC1D0221BE41F002A123B /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
-		4E8FC1D1221BE41F002A123B /* DDASLLogCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogCapture.m; sourceTree = "<group>"; };
-		4E8FC1D2221BE41F002A123B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		4E8FC1D3221BE41F002A123B /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		4E9DC01E2456C6F200ECA820 /* UIViewController+SRRNKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SRRNKit.h"; sourceTree = "<group>"; };
+		4E9DC01F2456C6F200ECA820 /* UIViewController+SRRNKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SRRNKit.m"; sourceTree = "<group>"; };
+		4E9DC0212456E2C400ECA820 /* UINavigationController+SRRNKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+SRRNKit.h"; sourceTree = "<group>"; };
+		4E9DC0222456E2C400ECA820 /* UINavigationController+SRRNKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+SRRNKit.m"; sourceTree = "<group>"; };
+		4E9DC025245AB1B700ECA820 /* SRRNProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRRNProgressHUD.h; sourceTree = "<group>"; };
+		4E9DC026245AB1B700ECA820 /* SRRNProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRRNProgressHUD.m; sourceTree = "<group>"; };
+		4E9DC029245AB20700ECA820 /* SRRNGif.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRRNGif.h; sourceTree = "<group>"; };
+		4E9DC02C245AB38200ECA820 /* UIView+SRRNKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SRRNKit.h"; sourceTree = "<group>"; };
+		4E9DC02D245AB38200ECA820 /* UIView+SRRNKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SRRNKit.m"; sourceTree = "<group>"; };
+		4E9DC02F245AC72900ECA820 /* SRRNGif.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRRNGif.m; sourceTree = "<group>"; };
+		4E9DC031246A71D400ECA820 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		4EC71F2324519B1A0019CA4E /* SRRNUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRRNUtilities.h; sourceTree = "<group>"; };
+		4EC71F2424519B1A0019CA4E /* SRRNUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRRNUtilities.m; sourceTree = "<group>"; };
+		4EC71F2C2456BFB80019CA4E /* SRRNNavigationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRRNNavigationItem.h; sourceTree = "<group>"; };
+		4EC71F2D2456BFB80019CA4E /* SRRNNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRRNNavigationBar.m; sourceTree = "<group>"; };
+		4EC71F2E2456BFB80019CA4E /* SRRNNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRRNNavigationBar.h; sourceTree = "<group>"; };
+		4EC71F2F2456BFB80019CA4E /* SRRNNavigationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRRNNavigationItem.m; sourceTree = "<group>"; };
+		4EC71F322456BFB80019CA4E /* SRRNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRRNViewController.m; sourceTree = "<group>"; };
+		4EC71F332456BFB80019CA4E /* SRRNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRRNViewController.h; sourceTree = "<group>"; };
+		4EC71F372456BFFD0019CA4E /* SRRNNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRRNNavigationController.h; sourceTree = "<group>"; };
+		4EC71F382456BFFD0019CA4E /* SRRNNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRRNNavigationController.m; sourceTree = "<group>"; };
+		5E8EBC731B86B4D0EE84AEAD /* libPods-SRRNKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SRRNKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5B20D868B8758E5A2C07F88 /* Pods-SRRNKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SRRNKit.debug.xcconfig"; path = "Target Support Files/Pods-SRRNKit/Pods-SRRNKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,89 +113,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F67B775334C45CC75CD3A3F /* libPods-SRRNKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E11277B2420B31E00E49154 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
 		4E3882A2222631B3004A552E /* SRRNWebServer */ = {
 			isa = PBXGroup;
 			children = (
-				4E3882A6222632D3004A552E /* GCDWebServer */,
 				4E3882A3222631DC004A552E /* SRRNWebServer.h */,
 				4E3882A4222631DC004A552E /* SRRNWebServer.m */,
 			);
 			path = SRRNWebServer;
 			sourceTree = "<group>";
 		};
-		4E3882A6222632D3004A552E /* GCDWebServer */ = {
-			isa = PBXGroup;
-			children = (
-				4E3882A7222632D3004A552E /* Core */,
-				4E3882BD222632D3004A552E /* Requests */,
-				4E3882B4222632D3004A552E /* Responses */,
-			);
-			path = GCDWebServer;
-			sourceTree = "<group>";
-		};
-		4E3882A7222632D3004A552E /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				4E3882AC222632D3004A552E /* GCDWebServer.h */,
-				4E3882B1222632D3004A552E /* GCDWebServer.m */,
-				4E3882AB222632D3004A552E /* GCDWebServerConnection.h */,
-				4E3882B2222632D3004A552E /* GCDWebServerConnection.m */,
-				4E3882A8222632D3004A552E /* GCDWebServerFunctions.h */,
-				4E3882B0222632D3004A552E /* GCDWebServerFunctions.m */,
-				4E3882AE222632D3004A552E /* GCDWebServerHTTPStatusCodes.h */,
-				4E3882A9222632D3004A552E /* GCDWebServerPrivate.h */,
-				4E3882B3222632D3004A552E /* GCDWebServerRequest.h */,
-				4E3882AD222632D3004A552E /* GCDWebServerRequest.m */,
-				4E3882AF222632D3004A552E /* GCDWebServerResponse.h */,
-				4E3882AA222632D3004A552E /* GCDWebServerResponse.m */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		4E3882B4222632D3004A552E /* Responses */ = {
-			isa = PBXGroup;
-			children = (
-				4E3882B8222632D3004A552E /* GCDWebServerDataResponse.h */,
-				4E3882BA222632D3004A552E /* GCDWebServerDataResponse.m */,
-				4E3882BB222632D3004A552E /* GCDWebServerErrorResponse.h */,
-				4E3882B7222632D3004A552E /* GCDWebServerErrorResponse.m */,
-				4E3882B5222632D3004A552E /* GCDWebServerFileResponse.h */,
-				4E3882B9222632D3004A552E /* GCDWebServerFileResponse.m */,
-				4E3882B6222632D3004A552E /* GCDWebServerStreamedResponse.h */,
-				4E3882BC222632D3004A552E /* GCDWebServerStreamedResponse.m */,
-			);
-			path = Responses;
-			sourceTree = "<group>";
-		};
-		4E3882BD222632D3004A552E /* Requests */ = {
-			isa = PBXGroup;
-			children = (
-				4E3882BE222632D3004A552E /* GCDWebServerDataRequest.h */,
-				4E3882C3222632D3004A552E /* GCDWebServerDataRequest.m */,
-				4E3882C0222632D3004A552E /* GCDWebServerFileRequest.h */,
-				4E3882C4222632D3004A552E /* GCDWebServerFileRequest.m */,
-				4E3882BF222632D3004A552E /* GCDWebServerMultiPartFormRequest.h */,
-				4E3882C2222632D3004A552E /* GCDWebServerMultiPartFormRequest.m */,
-				4E3882C5222632D3004A552E /* GCDWebServerURLEncodedFormRequest.h */,
-				4E3882C1222632D3004A552E /* GCDWebServerURLEncodedFormRequest.m */,
-			);
-			path = Requests;
-			sourceTree = "<group>";
-		};
 		4E3882D322263424004A552E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				4E3882D722265155004A552E /* Extensions.h */,
+				4E3882D722265155004A552E /* SRRNKitExtensions.h */,
 				4E3883052227804A004A552E /* NSObject+SRRNKit.h */,
 				4E3883062227804A004A552E /* NSObject+SRRNKit.m */,
 				4E3882D422263923004A552E /* NSString+SRRNKit.h */,
 				4E3882D522263923004A552E /* NSString+SRRNKit.m */,
+				4E9DC01E2456C6F200ECA820 /* UIViewController+SRRNKit.h */,
+				4E9DC01F2456C6F200ECA820 /* UIViewController+SRRNKit.m */,
+				4E9DC0212456E2C400ECA820 /* UINavigationController+SRRNKit.h */,
+				4E9DC0222456E2C400ECA820 /* UINavigationController+SRRNKit.m */,
+				4E9DC02C245AB38200ECA820 /* UIView+SRRNKit.h */,
+				4E9DC02D245AB38200ECA820 /* UIView+SRRNKit.m */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -219,6 +160,7 @@
 				4E8FC1A7221BE3C0002A123B /* SRRNKit */,
 				4E8FC1A6221BE3C0002A123B /* Products */,
 				8A367505EC93844EDC6EE250 /* Frameworks */,
+				8BF157D1E15549D50EF92E87 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -233,11 +175,15 @@
 		4E8FC1A7221BE3C0002A123B /* SRRNKit */ = {
 			isa = PBXGroup;
 			children = (
+				4E11277B2420B31E00E49154 /* Vendors */,
 				4E3882D322263424004A552E /* Extensions */,
+				4EC71F2A2456BFB80019CA4E /* SRRNUIKit */,
 				4E3882A2222631B3004A552E /* SRRNWebServer */,
 				4E8FC1B1221BE3D4002A123B /* SRRNLogger */,
+				4EC71F2224519AFF0019CA4E /* SRRNUtilities */,
 				4E8FC1A8221BE3C0002A123B /* SRRNKit.h */,
 				4E8FC1A9221BE3C0002A123B /* SRRNKit.m */,
+				4E9DC031246A71D400ECA820 /* PrefixHeader.pch */,
 			);
 			path = SRRNKit;
 			sourceTree = "<group>";
@@ -245,83 +191,95 @@
 		4E8FC1B1221BE3D4002A123B /* SRRNLogger */ = {
 			isa = PBXGroup;
 			children = (
-				4E8FC1B5221BE41F002A123B /* CocoaLumberjack */,
 				4E8FC1B2221BE416002A123B /* SRRNLogger.h */,
 				4E8FC1B3221BE416002A123B /* SRRNLogger.m */,
 			);
 			path = SRRNLogger;
 			sourceTree = "<group>";
 		};
-		4E8FC1B5221BE41F002A123B /* CocoaLumberjack */ = {
+		4E9DC024245AB18600ECA820 /* SRRNProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				4E8FC1B9221BE41F002A123B /* Classes */,
-				4E8FC1B6221BE41F002A123B /* Framework */,
-				4E8FC1D3221BE41F002A123B /* LICENSE.txt */,
-				4E8FC1D2221BE41F002A123B /* README.md */,
+				4E9DC025245AB1B700ECA820 /* SRRNProgressHUD.h */,
+				4E9DC026245AB1B700ECA820 /* SRRNProgressHUD.m */,
 			);
-			path = CocoaLumberjack;
+			path = SRRNProgressHUD;
 			sourceTree = "<group>";
 		};
-		4E8FC1B6221BE41F002A123B /* Framework */ = {
+		4E9DC028245AB1E400ECA820 /* SRRNGif */ = {
 			isa = PBXGroup;
 			children = (
-				4E8FC1B7221BE41F002A123B /* Lumberjack */,
+				4E9DC029245AB20700ECA820 /* SRRNGif.h */,
+				4E9DC02F245AC72900ECA820 /* SRRNGif.m */,
 			);
-			path = Framework;
+			path = SRRNGif;
 			sourceTree = "<group>";
 		};
-		4E8FC1B7221BE41F002A123B /* Lumberjack */ = {
+		4EC71F2224519AFF0019CA4E /* SRRNUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				4E8FC1B8221BE41F002A123B /* CocoaLumberjack.modulemap */,
+				4EC71F2324519B1A0019CA4E /* SRRNUtilities.h */,
+				4EC71F2424519B1A0019CA4E /* SRRNUtilities.m */,
 			);
-			path = Lumberjack;
+			path = SRRNUtilities;
 			sourceTree = "<group>";
 		};
-		4E8FC1B9221BE41F002A123B /* Classes */ = {
+		4EC71F2A2456BFB80019CA4E /* SRRNUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				4E8FC1BA221BE41F002A123B /* DDTTYLogger.m */,
-				4E8FC1BB221BE41F002A123B /* DDLog.h */,
-				4E8FC1BC221BE41F002A123B /* DDLegacyMacros.h */,
-				4E8FC1BD221BE41F002A123B /* DDAbstractDatabaseLogger.h */,
-				4E8FC1BE221BE41F002A123B /* DDLogMacros.h */,
-				4E8FC1BF221BE41F002A123B /* DDASLLogCapture.h */,
-				4E8FC1C0221BE41F002A123B /* DDASLLogger.m */,
-				4E8FC1C1221BE41F002A123B /* DDFileLogger.h */,
-				4E8FC1C2221BE41F002A123B /* Extensions */,
-				4E8FC1C9221BE41F002A123B /* DDLog.m */,
-				4E8FC1CA221BE41F002A123B /* CocoaLumberjack.h */,
-				4E8FC1CB221BE41F002A123B /* DDTTYLogger.h */,
-				4E8FC1CC221BE41F002A123B /* DDAssertMacros.h */,
-				4E8FC1CD221BE41F002A123B /* DDLog+LOGV.h */,
-				4E8FC1CE221BE41F002A123B /* DDAbstractDatabaseLogger.m */,
-				4E8FC1CF221BE41F002A123B /* DDFileLogger.m */,
-				4E8FC1D0221BE41F002A123B /* DDASLLogger.h */,
-				4E8FC1D1221BE41F002A123B /* DDASLLogCapture.m */,
+				4E9DC028245AB1E400ECA820 /* SRRNGif */,
+				4EC71F2B2456BFB80019CA4E /* SRRNNavigationBar */,
+				4EC71F3A2456C0080019CA4E /* SRRNNavigationController */,
+				4E9DC024245AB18600ECA820 /* SRRNProgressHUD */,
+				4EC71F302456BFB80019CA4E /* SRRNViewController */,
 			);
-			path = Classes;
+			path = SRRNUIKit;
 			sourceTree = "<group>";
 		};
-		4E8FC1C2221BE41F002A123B /* Extensions */ = {
+		4EC71F2B2456BFB80019CA4E /* SRRNNavigationBar */ = {
 			isa = PBXGroup;
 			children = (
-				4E8FC1C3221BE41F002A123B /* DDContextFilterLogFormatter.m */,
-				4E8FC1C4221BE41F002A123B /* DDDispatchQueueLogFormatter.m */,
-				4E8FC1C5221BE41F002A123B /* DDMultiFormatter.h */,
-				4E8FC1C6221BE41F002A123B /* DDContextFilterLogFormatter.h */,
-				4E8FC1C7221BE41F002A123B /* DDMultiFormatter.m */,
-				4E8FC1C8221BE41F002A123B /* DDDispatchQueueLogFormatter.h */,
+				4EC71F2E2456BFB80019CA4E /* SRRNNavigationBar.h */,
+				4EC71F2D2456BFB80019CA4E /* SRRNNavigationBar.m */,
+				4EC71F2C2456BFB80019CA4E /* SRRNNavigationItem.h */,
+				4EC71F2F2456BFB80019CA4E /* SRRNNavigationItem.m */,
 			);
-			path = Extensions;
+			path = SRRNNavigationBar;
+			sourceTree = "<group>";
+		};
+		4EC71F302456BFB80019CA4E /* SRRNViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4EC71F332456BFB80019CA4E /* SRRNViewController.h */,
+				4EC71F322456BFB80019CA4E /* SRRNViewController.m */,
+			);
+			path = SRRNViewController;
+			sourceTree = "<group>";
+		};
+		4EC71F3A2456C0080019CA4E /* SRRNNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				4EC71F372456BFFD0019CA4E /* SRRNNavigationController.h */,
+				4EC71F382456BFFD0019CA4E /* SRRNNavigationController.m */,
+			);
+			path = SRRNNavigationController;
 			sourceTree = "<group>";
 		};
 		8A367505EC93844EDC6EE250 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5E8EBC731B86B4D0EE84AEAD /* libPods-SRRNKit.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BF157D1E15549D50EF92E87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5B20D868B8758E5A2C07F88 /* Pods-SRRNKit.debug.xcconfig */,
+				438806B6A5C7B3DDCB34F789 /* Pods-SRRNKit.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +289,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E8FC1AE221BE3C0002A123B /* Build configuration list for PBXNativeTarget "SRRNKit" */;
 			buildPhases = (
+				D0E84F0B8021EFCC6F17C921 /* [CP] Check Pods Manifest.lock */,
 				4E8FC1A1221BE3C0002A123B /* Sources */,
 				4E8FC1A2221BE3C0002A123B /* Frameworks */,
 				4E8FC1A3221BE3C0002A123B /* CopyFiles */,
@@ -375,38 +334,51 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D0E84F0B8021EFCC6F17C921 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SRRNKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4E8FC1A1221BE3C0002A123B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EC71F352456BFB80019CA4E /* SRRNNavigationItem.m in Sources */,
+				4E9DC030245AC72900ECA820 /* SRRNGif.m in Sources */,
+				4EC71F342456BFB80019CA4E /* SRRNNavigationBar.m in Sources */,
 				4E3882A5222631DC004A552E /* SRRNWebServer.m in Sources */,
-				4E8FC1DC221BE41F002A123B /* DDASLLogCapture.m in Sources */,
-				4E3882D1222632D4004A552E /* GCDWebServerDataRequest.m in Sources */,
-				4E8FC1D6221BE41F002A123B /* DDContextFilterLogFormatter.m in Sources */,
-				4E3882D0222632D4004A552E /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				4EC71F2524519B1A0019CA4E /* SRRNUtilities.m in Sources */,
 				4E3883072227804A004A552E /* NSObject+SRRNKit.m in Sources */,
+				4E9DC0202456C6F200ECA820 /* UIViewController+SRRNKit.m in Sources */,
 				4E3882D622263923004A552E /* NSString+SRRNKit.m in Sources */,
-				4E8FC1D5221BE41F002A123B /* DDASLLogger.m in Sources */,
-				4E3882D2222632D4004A552E /* GCDWebServerFileRequest.m in Sources */,
-				4E8FC1D4221BE41F002A123B /* DDTTYLogger.m in Sources */,
-				4E8FC1D8221BE41F002A123B /* DDMultiFormatter.m in Sources */,
-				4E3882CB222632D4004A552E /* GCDWebServerErrorResponse.m in Sources */,
-				4E3882C6222632D4004A552E /* GCDWebServerResponse.m in Sources */,
-				4E8FC1D9221BE41F002A123B /* DDLog.m in Sources */,
-				4E8FC1DA221BE41F002A123B /* DDAbstractDatabaseLogger.m in Sources */,
 				4E8FC1B4221BE416002A123B /* SRRNLogger.m in Sources */,
 				4E8FC1AA221BE3C0002A123B /* SRRNKit.m in Sources */,
-				4E3882C8222632D4004A552E /* GCDWebServerFunctions.m in Sources */,
-				4E3882C9222632D4004A552E /* GCDWebServer.m in Sources */,
-				4E3882CA222632D4004A552E /* GCDWebServerConnection.m in Sources */,
-				4E3882CF222632D4004A552E /* GCDWebServerURLEncodedFormRequest.m in Sources */,
-				4E8FC1D7221BE41F002A123B /* DDDispatchQueueLogFormatter.m in Sources */,
-				4E3882CC222632D4004A552E /* GCDWebServerFileResponse.m in Sources */,
-				4E3882CD222632D4004A552E /* GCDWebServerDataResponse.m in Sources */,
-				4E3882CE222632D4004A552E /* GCDWebServerStreamedResponse.m in Sources */,
-				4E3882C7222632D4004A552E /* GCDWebServerRequest.m in Sources */,
-				4E8FC1DB221BE41F002A123B /* DDFileLogger.m in Sources */,
+				4EC71F392456BFFD0019CA4E /* SRRNNavigationController.m in Sources */,
+				4E9DC02E245AB38200ECA820 /* UIView+SRRNKit.m in Sources */,
+				4E9DC0232456E2C400ECA820 /* UINavigationController+SRRNKit.m in Sources */,
+				4EC71F362456BFB80019CA4E /* SRRNViewController.m in Sources */,
+				4E9DC027245AB1B700ECA820 /* SRRNProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,9 +499,11 @@
 		};
 		4E8FC1AF221BE3C0002A123B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5B20D868B8758E5A2C07F88 /* Pods-SRRNKit.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6NH38MACH2;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SRRNKit/PrefixHeader.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -540,9 +514,11 @@
 		};
 		4E8FC1B0221BE3C0002A123B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 438806B6A5C7B3DDCB34F789 /* Pods-SRRNKit.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6NH38MACH2;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SRRNKit/PrefixHeader.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

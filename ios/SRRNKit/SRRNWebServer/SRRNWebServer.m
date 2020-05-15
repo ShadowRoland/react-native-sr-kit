@@ -7,15 +7,27 @@
 //
 
 #import "SRRNWebServer.h"
-#import "GCDWebServer/Core/GCDWebServer.h"
-#import "GCDWebServer/Core/GCDWebServerPrivate.h"
-#import "../SRRNKit.h"
+#import <GCDWebServer/GCDWebServer.h>
+#import <GCDWebServer/GCDWebServerResponse.h>
+#import <GCDWebServer/GCDWebServerDataResponse.h>
+#import <GCDWebServer/GCDWebServerURLEncodedFormRequest.h>
+#import "SRRNKit.h"
+
+@interface SRRNWebServerHTTPHandler : NSObject
+@property (nonatomic, strong) NSString *method;
+@property (nonatomic, strong) NSString *path;
+@property (nonatomic, copy) SRRNWebServerHTTPProcess process;
+@end
+
+@implementation SRRNWebServerHTTPHandler
+@end
 
 static const NSString *kHtmlBaseFormat = @"<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body>%@</body></html>";
 
 @interface SRRNWebServer ()
 
 @property (nonatomic, strong) GCDWebServer *webServer;
+@property (nonatomic, strong) NSMutableDictionary *httpHandlers;
 @end
 
 @implementation SRRNWebServer
@@ -39,6 +51,7 @@ static SRRNWebServer *sharedInstance;
     self = [super init];
     if (self) {
         self.port = 9999;
+        self.httpHandlers = [NSMutableDictionary dictionary];
     }
     return self;
 }
@@ -53,6 +66,26 @@ static SRRNWebServer *sharedInstance;
 
 - (id)copyWithZone:(NSZone *)zone {
     return self;
+}
+
+#pragma mark -
+
+- (BOOL)isRunning {
+    return _webServer && _webServer.isRunning;
+}
+
+- (void)setIsRunning:(BOOL)isRunning {
+    
+}
+
+- (void)setPort:(NSInteger)port {
+    if (_port != port) {
+        _port = port;
+        if (self.isRunning) {
+            [self stop];
+            [self start];
+        }
+    }
 }
 
 RCT_EXPORT_METHOD(start) {
@@ -73,13 +106,39 @@ RCT_EXPORT_METHOD(stop) {
     }
 }
 
+- (void)addHTTPHandler:(NSString *)method path:(NSString *)path process:(SRRNWebServerHTTPProcess)process {
+    NSString *trimPath = [self trimPath:path];
+    NSString *upperMethod = [[method srrnTrim] uppercaseString];
+    if (trimPath.length == 0 || upperMethod.length == 0 || !process) {
+        return;
+    }
+    
+    SRRNWebServerHTTPHandler *handler = [SRRNWebServerHTTPHandler new];
+    handler.method = method;
+    handler.path = path;
+    handler.process = process;
+    self.httpHandlers[[self httpHandlerKey:method path:path]] = handler;
+}
+
+- (void)removeHTTPHandler:(NSString *)method path:(NSString *)path {
+    NSString *trimPath = [self trimPath:path];
+    NSString *upperMethod = [[method srrnTrim] uppercaseString];
+    if (!(trimPath.length == 0 || upperMethod.length == 0)) {
+        [self.httpHandlers removeObjectForKey:[self httpHandlerKey:method path:path]];
+    }
+}
+
+- (NSString *)httpHandlerKey:(NSString *)method path:(NSString *)path {
+    return [NSString stringWithFormat:@"method:%@,path:%@", method, path];
+}
+
 - (GCDWebServer *)webServer {
     if (_webServer) {
         return _webServer;
     }
     
     __weak typeof(self) weakSelf = self;
-    _webServer = [[GCDWebServer alloc] init];
+    _webServer = [GCDWebServer new];
     [_webServer addDefaultHandlerForMethod:@"GET"
                               requestClass:[GCDWebServerURLEncodedFormRequest class]
                               processBlock:^GCDWebServerResponse * _Nullable(__kindof GCDWebServerRequest * _Nonnull request)
@@ -89,33 +148,36 @@ RCT_EXPORT_METHOD(stop) {
          }
          
          NSDictionary *query = request.query;
-         NSString *path = [weakSelf formatURLPath:request.URL];
+         NSString *path = [weakSelf trimPath:request.URL.path];
          NSString *body;
-         if ([SRRNKit isEmptyString:path]) {
+         if ([Utilities isEmptyString:path]) {
              if (query.count == 0) { //默认访问手机的日志文件列表
                  body = [self logFiles];
+             } else if (request.query[@"index"]) {
+                 if (request.query[@"length"]) {
+                     body = [self logFileContent:[request.query[@"index"] integerValue]
+                                          length:[request.query[@"length"] integerValue]];
+                 } else {
+                     body = [self logFileContent:[request.query[@"index"] integerValue] length:-1];
+                 }
+                 return [GCDWebServerDataResponse responseWithText:body];
              }
-         } else if (request.query[@"index"]) {
-             if (request.query[@"length"]) {
-                 body = [self logFileContent:[request.query[@"index"] integerValue]
-                                      length:[request.query[@"length"] integerValue]];
-             } else {
-                 body = [self logFileContent:[request.query[@"index"] integerValue] length:-1];
-             }
-             return [GCDWebServerDataResponse responseWithText:body];
+             NSString *html =
+             [NSString stringWithFormat:(NSString *)kHtmlBaseFormat, body];
+             return [GCDWebServerDataResponse responseWithHTML:html];
+         } else {
+//             SRRNWebServerHTTPHandler *handler = weakSelf.httpHandlers[[weakSelf httpHandlerKey:@"GET" path:path]];
+//             if (handler) {
+//                 return [GCDWebServerDataResponse responseWithText:@""];
+//             }
+             return [GCDWebServerDataResponse responseWithText:@""];
          }
-         NSString *html =
-         [NSString stringWithFormat:(NSString *)kHtmlBaseFormat, body];
-         return [GCDWebServerDataResponse responseWithHTML:html];
     }];
     return _webServer;
 }
 
-- (NSString *)formatURLPath:(NSURL *)url {
-    return [url.path stringByReplacingOccurrencesOfString:@"/"
-                                               withString:@""
-                                                  options:NSCaseInsensitiveSearch
-                                                    range:NSMakeRange(0, 1)];
+- (NSString *)trimPath:(NSString *)path {
+    return [path stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"/\\"]];
 }
 
 //MARK: Log Reader

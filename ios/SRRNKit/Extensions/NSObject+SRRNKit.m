@@ -11,11 +11,11 @@
 
 @implementation NSObject (SRRNKit)
 
-- (BOOL)hasProperty:(NSString *)name {
+- (BOOL)srrnHasProperty:(NSString *)name {
     return name.length == 0 ? NO : class_getProperty(object_getClass(self), name.UTF8String) != NULL;
 }
 
-- (BOOL)hasMethod:(NSString *)name {
+- (BOOL)srrnHasMethod:(NSString *)name {
     if (name.length == 0)
         return NO;
     
@@ -33,4 +33,19 @@
     free(methods);
     return NO;
 }
+
+- (id)srrnObjectWithKindOfClass:(Class)aClass {
+    id object;
+    if ([self isKindOfClass:aClass]) {
+        object = self;
+    } else if ([self isKindOfClass:NSString.class]) {
+        Class ofClass = NSClassFromString((NSString *)self);
+        if (ofClass && [ofClass isSubclassOfClass:aClass]) {
+            object = [aClass new];
+        }
+    }
+
+    return object;
+}
+
 @end

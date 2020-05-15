@@ -6,16 +6,7 @@
 //  Copyright © 2019 Sharow Roland. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "CocoaLumberjack/Classes/CocoaLumberjack.h"
-
-#if __has_include(<React/RCTAssert.h>)
-#import <React/RCTBridgeModule.h>
-#else
-#import "RCTBridgeModule.h"
-#endif
-#import <React/RCTViewManager.h>
-#import <React/RCTView.h>
+#import <CocoaLumberjack/CocoaLumberjack.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
